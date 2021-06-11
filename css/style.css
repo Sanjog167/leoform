@@ -3643,7 +3643,7 @@ outline-width: 0;
   font-size: 12px;
 }
 
-.stepbutton_new button{
+.stepbutton_new a{
   width: 50%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -3653,13 +3653,20 @@ outline-width: 0;
   box-shadow: 2px 2px 15px #ed40417a;
   border-radius: 5px;
   font-size: 15px;
-  padding: 8px 20px;
+  padding: 8px 60px;
   outline-width: 0;
+  width: 100%;
+}
+
+.stepbutton_new{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
 
 
-.stepbutton_new button img{
+.stepbutton_new a img{
   width: 20px;
   margin-right: 10px;
 }
@@ -3866,11 +3873,11 @@ outline-width: 0;
   margin: auto;
 }
 
-.okay_button{
+/* .okay_button{
   width: 100%;
 }
 
-.okay_button button{
+.okay_button a{
   width: 50%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -3882,7 +3889,7 @@ outline-width: 0;
   font-size: 15px;
   padding: 4px 20px;
   outline-width: 0;
-}
+} */
 
 .otps_input{
   display: flex;
@@ -3909,8 +3916,9 @@ border-radius: 13px;
   align-items: center;
 }
 
-.chooseyoubutton button{
+.chooseyoubutton a{
   width: 50%;
+  margin-right: 10px;
 }
 
 .firstshowmodal{
@@ -4226,9 +4234,9 @@ border-radius: 13px;
 }
 
 @media(max-width:1599px) and (min-width:1400px){
-  .invoicebanner{
+  /* .invoicebanner{
     height: 80vh;
-  }
+  } */
     .realinvoice .register_first{
     position: absolute;
     top: -28%;
@@ -4239,4 +4247,171 @@ border-radius: 13px;
   body{
     overflow: initial;
   }
+}
+
+.newemailverification{
+  height: 400px;
+}
+
+.newemailverification .otps_next p{
+  color: var(--redcolor)!important;
+  width: 90%!important;
+  margin: 1rem auto;
+}
+
+.newemailverification .otps{
+  margin: 1rem auto;
+}
+
+
+.choosebutton_new{
+  display: flex;
+  align-items: center;
+}
+
+.choosebutton_new a{
+  width: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  color: white;
+  background: #ED4041 0% 0% no-repeat padding-box;
+  box-shadow: 2px 2px 15px #ed40417a;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 8px 45px;
+  outline-width: 0;
+}
+
+.choosebutton_new{
+  margin-top: 30px;
+  width: 100%;
+}
+
+
+.choosebutton_new a:not(:last-child){
+  margin-right: 10px;
+}
+
+.multistep input[value]{
+  color: red;
+}
+
+.multistep label{
+  text-align: start;
+}
+
+.toggleswitches{
+  background-color: #ccc;
+  width: 50px;
+  height: 20px;
+  border-radius: 999px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: auto;
+}
+
+.toggle_round{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 200ms ease-out;
+}
+
+.toggle_round.leftright{
+  position: absolute;
+  top: 0;
+  left: 30px!important;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#pricetogglefirst.background{
+  background-color: #0FB20F;
+}
+
+.company_change{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.company_change p{
+  font-size: 11px;
+  text-align: start;
+  color: black;
+}
+
+.company_change button{
+  font-size: 12px;
+}
+
+.hidden_label{
+  display: none;
+}
+
+.company_change_next{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 24px;
+  display: none;
+}
+
+.company_change_next p{
+  font-size: 11px;
+  text-align: start;
+  color: black;
+}
+
+.company_change_next button{
+  font-size: 12px;
+}
+
+.secondinput{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.secondinput input{
+  width: initial;
+  margin-right: 10px;
+}
+
+.agree_para{
+  text-align: start;
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+a{
+  text-decoration: none!important;
+}
+
+.language_choose{
+  position: relative;
+}
+
+.language_options{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 9%;
+  right:2%;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+  padding: 10px 40px;
 }
